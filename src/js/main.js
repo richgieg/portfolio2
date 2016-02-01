@@ -25,7 +25,9 @@ $(function() {
                 $projectTiles.eq(index).addClass(activeClass);
             } else {
                 $projectTiles.eq(index - 1).removeClass(activeClass);
-                $body.removeClass(introClass);
+                setTimeout(function() {
+                    $body.removeClass(introClass);
+                }, 200);
                 clearInterval(interval);
             }
             index++;
