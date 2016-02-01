@@ -38,24 +38,28 @@ $(function() {
     // Expand tile when project's link is clicked
     function projectLinkClickHandler(e) {
         var $this = $(this);
+        var $activeLink = $projectLinks.filter('.' + activeClass);
         var $activeTile = $projectTiles.filter('.' + activeClass);
         var linkIndex = $projectLinks.index($this);
 
         // If a tile is currently active, it must be deactivated
         if ($activeTile.length > 0) {
             // Deactivate the active tile
+            $activeLink.removeClass(activeClass);
             $activeTile.removeClass(activeClass);
 
             // If the clicked link does not belong to the previously-active
             // tile, activate the tile associated with the clicked link
             if (linkIndex !== $projectTiles.index($activeTile)) {
                 setTimeout(function() {
+                    $this.addClass(activeClass);
                     $projectTiles.eq(linkIndex).addClass(activeClass);
                 }, 350);
             }
 
         // Otherwise, just activate the desired tile
         } else {
+            $this.addClass(activeClass);
             $projectTiles.eq(linkIndex).addClass(activeClass);
         }
 
