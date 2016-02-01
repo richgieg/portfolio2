@@ -19,3 +19,13 @@ body {
     border-color: #73a5b5;
     border-width: 0 20px;
 }
+
+.pj-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+}
+
+.pj-content.active {
+    max-height: 500px;
+}
