@@ -1,0 +1,21 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+
+.container {
+    width: 960px;
+    background-color: #aacad4;
+    margin: 0 auto;
+    height: 100%;
+    border-style: solid;
+    border-color: #73a5b5;
+    border-width: 0 20px;
+}
