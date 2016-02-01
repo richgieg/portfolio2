@@ -160,32 +160,15 @@ img {
     background-color: #555;
 }
 
-.pj-images {
-    font-size: 0;
-    height: 100%;
-    line-height: 100%;
-}
-
 .pj-image {
-    box-sizing: border-box;
-    display: inline-block;
-    width: 50%;
+    background-color: #eee;
+    padding: 1.6em;
 }
 
-.pj-image:nth-child(1) {
-    padding: 0 3px 3px 0;
-}
-
-.pj-image:nth-child(2) {
-    padding: 0 0 3px 3px;
-}
-
-.pj-image:nth-child(3) {
-    padding: 3px 3px 0 0;
-}
-
-.pj-image:nth-child(4) {
-    padding: 3px 0 0 3px;
+.pj-image > img {
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
 }
 
 .pj-description {
