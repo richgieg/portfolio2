@@ -12,8 +12,6 @@ body {
 
 img {
     max-width: 100%;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
 }
 
 header {
@@ -62,8 +60,21 @@ header {
 }
 
 .pj-link > h3 {
+    display: inline;
     font-size: 2em;
     font-weight: normal;
+}
+
+.pj-link-info {
+    float: right;
+}
+
+.pj-link-info > img {
+    max-height: 1.8em;
+    border: 1px solid gray;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
 }
 
 .pj-container {
