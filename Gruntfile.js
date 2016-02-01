@@ -51,7 +51,7 @@ module.exports = function(grunt) {
 
     jshint: {
       beforeconcat: ['src/**/*.js'],
-      afterconcat: ['dist/**/*.js']
+      afterconcat: ['.tmp/concat/**/*.js']
     }
   });
 
@@ -70,9 +70,9 @@ module.exports = function(grunt) {
     'copy:html',
     'useminPrepare',
     'concat:generated',
+    'jshint:afterconcat',
     'cssmin:generated',
     'uglify:generated',
-    'jshint:afterconcat',
     'usemin',
     'htmlmin'
   ]);
