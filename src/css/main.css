@@ -125,6 +125,12 @@ img {
     margin: 1.8em 1.5em;
 }
 
+.pj-content > h4 {
+    color: #092b48;
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
 .pj-content-left {
     display: inline-block;
     vertical-align: top;
