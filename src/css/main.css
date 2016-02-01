@@ -10,6 +10,12 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
 }
 
+img {
+    max-width: 100%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
 .container {
     width: 960px;
     margin: 0 auto;
@@ -79,10 +85,6 @@ body {
 
 .pj-image:nth-child(4) {
     padding: 3px 0 0 3px;
-}
-
-.pj-image > img {
-    max-width: 100%;
 }
 
 .pj-description {
