@@ -4,11 +4,11 @@ module.exports = function(grunt) {
 
     clean: {
       dev_images: {
-        src: ['src/img']
+        src: 'src/img'
       },
 
       dist: {
-        src: ['dist']
+        src: 'dist'
       }
     },
 
@@ -63,8 +63,8 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      beforeconcat: ['src/**/*.js'],
-      afterconcat: ['.tmp/concat/**/*.js']
+      beforeconcat: 'src/**/*.js',
+      afterconcat: '.tmp/concat/**/*.js'
     },
 
     responsive_images: {
