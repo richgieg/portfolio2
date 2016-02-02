@@ -68,6 +68,22 @@ module.exports = function(grunt) {
     },
 
     responsive_images: {
+      dev_favicon: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            rename: false,
+            width: 72,
+          }]
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/img_src',
+          src: 'favicon.png',
+          dest: 'src/img',
+        }]
+      },
+
       dev_project_thumbnails: {
         options: {
           engine: 'im',
@@ -118,8 +134,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('dev_images', [
     'clean:dev_images',
-    'responsive_images:dev_project_thumbnails',
-    'responsive_images:dev_project_images',
+    'responsive_images',
   ]);
 
   grunt.registerTask('default', [
