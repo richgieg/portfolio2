@@ -122,7 +122,7 @@ img {
 }
 
 .pj-container.active {
-    max-height: 800px;
+    max-height: 1000px;
     transition: max-height 0.3s ease-in-out;
 }
 
@@ -189,7 +189,33 @@ img {
     box-sizing: border-box;
     width: 63.5%;
     margin-left: 1.5%;
-    background-color: #dadada;
-    padding: 1em;
+    background-color: #f5f5f5;
+    padding: 2em 1.8em;
     border: 1px solid #bec7ca;
+}
+
+.pj-description > p,
+.pj-description > ul {
+    line-height: 1.2;
+    margin-bottom: 1em;
+}
+
+.pj-description > p:last-child,
+.pj-description > ul:last-child {
+    margin-bottom: 0;
+}
+
+.pj-description > ul {
+    margin-left: 3em;
+}
+
+.pj-description > ul > li {
+    position: relative;
+    line-height: 1.4em;
+}
+
+.pj-description > ul > li::before {
+    position: absolute;
+    left: -1.6em;
+    content: '‣';
 }
