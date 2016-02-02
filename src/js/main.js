@@ -2,13 +2,19 @@
 // Execute when the DOM is fully-loaded
 $(function() {
 
+    // Class indentifier variables
     var activeClass = 'active';
     var introClass = 'intro';
+    var skillClass = 'skill';
+    var skillHighlightClass = 'highlight';
 
     // Acquire jQuery objects for elements
     var $body = $('body');
     var $projectTiles = $('.pj-container');
     var $projectLinks = $('.pj-link');
+
+    // Skill animation interval
+    var skillAnimationInterval = null;
 
 
     // Flip through the project tiles
@@ -68,8 +74,46 @@ $(function() {
     }
 
 
-    // Wire up the project link click handler
+    // Wire up the project link click handler (expands project content)
     $projectLinks.click(projectLinkClickHandler);
+
+    // Wire up the project link mouseenter handler (animates skills)
+    $projectLinks.on('mouseenter', function(e) {
+        var $this = $(this);
+        var $skills = $this.find('.' + skillClass);
+
+        // Toggle the highlight class on each skill element in order to provide
+        // an animation effect
+        var animate = function() {
+            $skills.each(function(index) {
+                var $skill = $(this);
+                var delay = index * 150;
+
+                // The first timeout adds the highlight class, while the
+                // second timeout removes it
+                setTimeout(function() {
+                    $skill.addClass(skillHighlightClass);
+                    setTimeout(function() {
+                        $skill.removeClass(skillHighlightClass);
+                    }, 350);
+                }, delay);
+            });
+        };
+
+        // Immediately call the animate function, then set the interval timer
+        // to call it from then on
+        animate();
+        skillAnimationInterval = setInterval(animate, 2500);
+    });
+
+    // Wire up the project link mouseleave handler (stops animating skills)
+    $projectLinks.on('mouseleave', function(e) {
+        // If currently animating, stop
+        if (skillAnimationInterval) {
+            clearInterval(skillAnimationInterval);
+            skillAnimationInterval = null;
+        }
+    });
 
     // Perform intro animation
     animateProjectTiles($projectTiles);
