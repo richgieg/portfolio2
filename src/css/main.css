@@ -1,7 +1,6 @@
 
-
-/* iPad (portrait) and bigger */
-@media screen and (min-width: 768px) {
+/* Mobile phone (landscape) and bigger */
+@media screen and (min-width: 520px) {
 
     body.intro {
         height: 100%;
@@ -9,7 +8,7 @@
     }
 
     body {
-        font-size: 12px;
+        font-size: 8px;
         background: -moz-linear-gradient(left,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
         background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -29,7 +28,7 @@
     }
 
     .header-text {
-        width: 700px;
+        width: 480px;
         color: white;
         margin: 2em auto;
         padding: 1em 0;
@@ -48,7 +47,7 @@
     }
 
     .container {
-        width: 700px;
+        width: 480px;
         margin: 0 auto 3em;
     }
 
@@ -220,6 +219,24 @@
         position: absolute;
         left: -1.6em;
         content: '‣';
+    }
+
+}
+
+
+/* iPad (portrait) and bigger */
+@media screen and (min-width: 768px) {
+
+    body {
+        font-size: 12px;
+    }
+
+    .header-text {
+        width: 700px;
+    }
+
+    .container {
+        width: 700px;
     }
 
 }
