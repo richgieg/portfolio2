@@ -98,7 +98,7 @@
         font-size: 0.8em;
         color: #7b7979;
         vertical-align: top;
-        padding: 0 0.8em;
+        padding: 0.3em 0.8em 0;
         margin: 0 0.1em;
         border: 1px solid #fff;
         background-color: #e0e0e0;
@@ -237,6 +237,10 @@
 
     .container {
         width: 700px;
+    }
+
+    .skill {
+        padding: 0 0.8em;
     }
 
 }
