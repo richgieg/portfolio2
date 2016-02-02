@@ -84,6 +84,23 @@ module.exports = function(grunt) {
         }]
       },
 
+      dev_fb_preview: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            rename: false,
+            width: '100%',
+            quality: 70
+          }]
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/img_src',
+          src: 'fb-preview.jpg',
+          dest: 'src/img',
+        }]
+      },
+
       dev_project_thumbnails: {
         options: {
           engine: 'im',
