@@ -101,7 +101,7 @@ img {
     margin: 0 0.1em;
     border: 1px solid #fff;
     background-color: #e0e0e0;
-    transition: background-color 1.5s;
+    transition: background-color 1.5s ease-in-out;
     border-radius: 0.4em;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
