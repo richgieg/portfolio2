@@ -1,6 +1,4 @@
-
-
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 768px) {
 
     body.intro {
         height: 100%;
@@ -12,10 +10,6 @@
         background: -webkit-linear-gradient(left,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
         background: linear-gradient(to right,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
-    }
-
-    img {
-        max-width: 100%;
     }
 
     .header-link {
@@ -31,7 +25,7 @@
     }
 
     .header-text {
-        width: 960px;
+        width: 700px;
         color: white;
         margin: 2em auto;
         padding: 1em 0;
@@ -50,7 +44,7 @@
     }
 
     .container {
-        width: 960px;
+        width: 700px;
         margin: 0 auto 3em;
     }
 
@@ -222,5 +216,127 @@
         position: absolute;
         left: -1.6em;
         content: '‣';
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+    .header-text {
+        width: 960px;
+    }
+
+    .header-text > h1 {
+
+    }
+
+    .header-text > h2 {
+
+    }
+
+    .container {
+        width: 960px;
+    }
+
+    .pj-item {
+
+    }
+
+    .pj-link {
+
+    }
+
+    .pj-link.active,
+    .pj-link:hover {
+
+    }
+
+    .pj-link > h3 {
+
+    }
+
+    .pj-link-info {
+
+    }
+
+    .pj-link-info > img {
+
+    }
+
+    .skill {
+
+    }
+
+    .skill.highlight {
+
+    }
+
+    .pj-container {
+
+    }
+
+    .pj-container.active {
+
+    }
+
+    .pj-content {
+
+    }
+
+    .pj-content > h4 {
+
+    }
+
+    .pj-content-left {
+
+    }
+
+    .pj-project-links {
+
+    }
+
+    .pj-project-links > a {
+
+    }
+
+    .pj-project-links > a:hover {
+
+    }
+
+    .pj-image-link {
+
+    }
+
+    .pj-image-link:hover {
+
+    }
+
+    .pj-image-link > img {
+
+    }
+
+    .pj-description {
+
+    }
+
+    .pj-description > p,
+    .pj-description > ul {
+
+    }
+
+    .pj-description > p:last-child,
+    .pj-description > ul:last-child {
+
+    }
+
+    .pj-description > ul {
+
+    }
+
+    .pj-description > ul > li {
+
+    }
+
+    .pj-description > ul > li::before {
+
     }
 }
