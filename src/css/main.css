@@ -160,12 +160,18 @@ img {
     background-color: #555;
 }
 
-.pj-image {
+.pj-image-link {
+    display: block;
     background-color: #eee;
     padding: 1.6em;
 }
 
-.pj-image > img {
+.pj-image-link:hover {
+    background-color: #fff;
+}
+
+.pj-image-link > img {
+    border: 1px solid #bec7ca;
     -webkit-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     -moz-box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
     box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.2);
