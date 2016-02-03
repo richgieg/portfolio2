@@ -128,7 +128,8 @@ body {
 
 .pj-content > h4 {
     color: #092b48;
-    font-size: 1.2em;
+    font-size: 1.8em;
+    line-height: 1.2em;
     margin-bottom: 1em;
 }
 
@@ -272,6 +273,11 @@ body {
 
     .skill {
         padding: 0 0.8em;
+    }
+
+    .pj-content > h4 {
+        font-size: 1.2em;
+        line-height: inherit;
     }
 
 }
