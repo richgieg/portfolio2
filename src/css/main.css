@@ -11,7 +11,9 @@ body {
 
 .header-link {
     display: block;
-    background-color: #446c90;
+    /*background-color: #446c90;*/
+    background-color: #000;
+    transition: background-color 1s;
     -webkit-box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.55);
     -moz-box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.55);
     box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.55);
@@ -19,6 +21,7 @@ body {
 
 .header-link:hover {
     background-color: #2c4c69;
+    transition: background-color 1s;
 }
 
 .header-text {
