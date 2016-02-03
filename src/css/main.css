@@ -117,7 +117,7 @@ body {
 }
 
 .pj-container.active {
-    max-height: 1000px;
+    max-height: 1500px;
     transition: max-height 0.3s ease-in-out;
 }
 
@@ -186,7 +186,7 @@ body {
     padding: 2em 1.8em;
     border: 1px solid #bec7ca;
     margin-top: 1em;
-
+    font-size: 1.6em;
 }
 
 .pj-description > p,
@@ -282,6 +282,10 @@ body {
     }
 
     .pj-project-links > a {
+        font-size: inherit;
+    }
+
+    .pj-description {
         font-size: inherit;
     }
 
