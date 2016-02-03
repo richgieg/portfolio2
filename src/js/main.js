@@ -33,7 +33,7 @@ $(function() {
                 $projectTiles.eq(index - 1).removeClass(activeClass);
                 setTimeout(function() {
                     $body.removeClass(introClass);
-                }, 200);
+                }, 500);
                 clearInterval(interval);
             }
             index++;
