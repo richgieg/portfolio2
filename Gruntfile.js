@@ -101,6 +101,22 @@ module.exports = function(grunt) {
         }]
       },
 
+      dev_social: {
+        options: {
+          engine: 'im',
+          sizes: [{
+            rename: false,
+            width: 200,
+          }]
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/img_src',
+          src: 'soc-*.png',
+          dest: 'src/img',
+        }]
+      },
+
       dev_project_thumbnails: {
         options: {
           engine: 'im',
