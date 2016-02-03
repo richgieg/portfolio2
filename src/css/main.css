@@ -1,4 +1,8 @@
 
+html {
+    min-height: 100%;
+}
+
 body.intro {
     height: 100%;
     overflow: hidden;
