@@ -21,7 +21,7 @@ body {
     font-family: 'Questrial', sans-serif;
     font-weight: normal;
     margin: 2em auto 0;
-    padding: 1.4em 0;
+    padding: 1.8em 0 1em;
 }
 
 .header-text > h1 {
@@ -43,9 +43,9 @@ body {
     padding: 1em 0;
     text-align: center;
     background-color: #496e86;
-    -webkit-box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.55);
-    -moz-box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.55);
-    box-shadow: 5px 5px 8px 0px rgba(0,0,0,0.55);
+    -webkit-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.55);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.55);
 }
 
 .social-link {
@@ -59,6 +59,10 @@ body {
     border: 1px solid #fff;
     border-radius: 0.3em;
     vertical-align: middle;
+}
+
+.social-link:hover {
+    border: 1px solid red;
 }
 
 .container {
@@ -294,10 +298,6 @@ body {
         height: 2em;
         line-height: 2em;
         margin: 0 0.2em;
-    }
-
-    .social-link:hover {
-        border: 1px solid red;
     }
 
     .container {
