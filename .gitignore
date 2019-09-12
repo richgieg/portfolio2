@@ -2,5 +2,6 @@ node_modules/
 dist/
 .tmp/
 src/img/
+.firebase
 .firebaserc
 firebase.json
