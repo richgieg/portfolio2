@@ -75,6 +75,17 @@ body {
     margin: 0 auto 3em;
 }
 
+.bio {
+    margin-bottom: 2em;
+}
+
+.bio > p {
+    background-color: #fff;
+    color: #3a3a3a;
+    padding: 3em;
+    line-height: 1.4em;
+}
+
 .pj-item {
     margin-top: 1em;
     -webkit-box-shadow: 3px 3px 8px 0px rgba(0,0,0,0.55);
